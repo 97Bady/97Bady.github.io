@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('./javascript/image/hex_background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#quiz {
+    text-align: center;
+    background-color: rgba(52, 152, 219, 0.9); /* Fond légèrement transparent pour une meilleure lisibilité */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 80%;
+    margin: auto;
+}
+
+#quiz h1 {
+    color: #ecf0f1;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#startButton {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    margin-top: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#startButton:hover {
+    transform: scale(1.1);
+}
+
+#startButton:active {
+    transform: rotate(360deg);
+}
+
+#startButton img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#startButton::after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background-color: #e74c3c;
+    border-radius: 50%;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
+
+#startButton:active::after {
+    transform: scale(1.8);
+    opacity: 1;
+}

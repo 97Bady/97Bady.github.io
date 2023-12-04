@@ -61,5 +61,96 @@ body #progress {
   font-size: 1.3rem;
   color: #ffa502;
 }
+#container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+
+}
+
+#inspiration {
+  text-align: left;
+  margin-right: 20px; /* Ajout de la marge entre #inspiration et #nom */
+}
+
+#lien {
+  font-size: 10px;
+  color: #0077cc;
+  margin-top: 5px;
+}
+
+#nom {
+  text-align: center;
+  margin-right: 20px; /* Ajout de la marge entre #nom et .circle-photo */
+}
+
+#nom h1 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+#nom p {
+  font-size: 12px;
+}
+
+.circle-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.circle-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#myButton {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+  visibility: hidden;
+}
+
+
+#changeColorBtn{
+	box-shadow: 3px 4px 0px 0px #8a2a21;
+	background:linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+	background-color:#c62d1f;
+	border-radius:18px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:7px 25px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+
+ 
+}
+#changeColorBtn:hover {
+	background:linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+	background-color:#f24437;
+}
+#changeColorBtn:active {
+	position:relative;
+	top:1px;
+}
+
+
 
 /*# sourceMappingURL=style.css.map */
